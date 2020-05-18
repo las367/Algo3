@@ -70,6 +70,7 @@ public class Stack<T> implements Stackable<T>  {
 
             System.out.printf("Data on index %d is:", counter);
             System.out.print(current.data + "\n");
+            counter++;
 
             current = current.next;
         }
