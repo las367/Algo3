@@ -27,8 +27,61 @@ public class StackCommand implements ICommand {
 
     @Override
     public void execute() {
-        // TODO add commands
+        
+        int userInput = 12;
 
+        while ( userInput != 0 ) {
+
+            userInput = in.inputInt(MENU_TEXT);
+
+            switch ( userInput ) {
+                
+                case 1:
+                    stack.push(
+                        CreateStudent.create()
+                    );
+                    break;
+
+                case 2:
+                    System.out.println(
+                        "Student popped: " + stack.pop()
+                    );
+                    break;
+
+                case 3:
+                    System.out.println(
+                        "Student peeked: " + stack.peek()
+                    );
+                    break;
+                
+                case 4:
+                    System.out.println(
+                        stack.isEmpty() ? "stack is empty" : "stack is not empty"
+                    );
+                    break;
+                
+                case 5:
+                    stack.clear();
+                    break;
+
+                case 6:
+                    stack.printAll();
+                    break;
+
+                case 7:
+                    System.out.println(
+                        "size:  " + stack.size()
+                    );
+                    break;
+            
+                case 0:
+                    break;
+
+                default: 
+                    System.out.println("Please enter another number");
+                    break;
+            }   
+        }
     }
     
 }

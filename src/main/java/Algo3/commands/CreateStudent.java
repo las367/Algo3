@@ -4,9 +4,9 @@ import Algo3.data.Student;
 
 public class CreateStudent {
 
-    private Console in = new Console();
+    private  static Console in = new Console();
 
-    public Student create() {
+    public static Student create() {
 
         String prename = in.inpuString("Please enter Prename: ");
         String surname = in.inpuString("Please enter surname: ");
