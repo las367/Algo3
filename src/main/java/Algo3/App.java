@@ -3,12 +3,28 @@
  */
 package Algo3;
 
+import Algo3.data.Student;
+import Algo3.stacks.Stack;
+import Algo3.stacks.Stackable;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
+        Stackable<Student> stack = new Stack<Student>();
+
+        Student s1 = new Student("mickey", "mouse", 1, 2);
+        Student s2 = new Student("donald", "duck", 6, 9);
+
+        stack.push(s1);
+        stack.push(s2);
+        System.out.println(stack.peek());
+
+        stack.pop();
+
+        stack.printAll();
     }
 }
