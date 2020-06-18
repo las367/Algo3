@@ -15,8 +15,8 @@ public class StackCommand implements ICommand {
                                         "4. Check if students are on the stack." + "\n" +
                                         "5. Clear stack." + "\n" +
                                         "6. Print all students from stack." + "\n" +
-                                        " 7. Get size of stack." + "\n" +
-                                        " 0. Exit." + "\n" +
+                                        "7. Get size of stack." + "\n" +
+                                        "0. Exit." + "\n" +
                                         "Please enter a number for an option:";
 
     public StackCommand() {
